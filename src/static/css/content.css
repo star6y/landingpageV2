@@ -1,0 +1,40 @@
+.box {
+  background-color: var(--color-foreground);
+  color: var(--color-primary);
+  margin-bottom: 20px;
+}
+
+.more-margin {
+  margin-bottom: 200px;
+}
+
+ul {
+  margin-left: 20px; 
+  padding-left: 20px; 
+  list-style-type: disc; 
+}
+
+ul li {
+  /* margin-bottom: 10px;*/
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--color-primary-invert);
+  text-decoration: underline;
+}
+
+
+
+
+
+@media (max-width: 750px) {
+  .more-margin {
+    margin-bottom: 200px; 
+    padding-bottom: 60px;
+  }
+}

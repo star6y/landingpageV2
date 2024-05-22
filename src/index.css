@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+
+code {
+  /* font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace; */
+}
+
+
+/* index.css */
+/* body {
+  --color-background: #fafafa;
+  --color-foreground: #1f2023;
+  --color-primary: #277280; 
+  --color-primary-invert: #fff;
+} 
+body.dark {
+  --color-background: #1f2023;
+  --color-foreground: #efefef;
+  --color-primary: #3273dc; 
+  --color-primary-invert: #000;
+}*/
+
+
+
+/*  DAD7CD  A3B18A  588157  3A5A40  344E41 */
+body {
+  --color-background: #DAD7CD;
+  --color-foreground: #A3B18A;
+  --color-accent: #588157;
+  --color-one: #3A5A40;
+  --color-two: #344E41;
+  --color-primary: #000; 
+  --color-primary-invert: #fff;
+}
+
+body.dark {
+  --color-background: #344E41;
+  --color-foreground: #588157;
+  --color-accent: #3A5A40;
+  --color-one: #A3B18A;
+  --color-two: #DAD7CD;
+  --color-primary: #fff; 
+  --color-primary-invert: #DAD7CD;
+}
+
+
+/*  #127369  #10403B  #8AA6A3  #4C5958  #BFBFBF */
+/* body {
+  --color-background: #127369;
+  --color-foreground: #8AA6A3;
+  --color-accent: #4C5958;
+  --color-one: #4C5958;
+  --color-two: #BFBFBF;
+  --color-primary: #000; 
+  --color-primary-invert: #fff;
+} 
+body.dark {
+  --color-background: #3A6AA8;
+  --color-foreground: #10403B;
+  --color-accent: #10403B;
+  --color-one: #A3B18A;
+  --color-two: #DAD7CD;
+  --color-primary: #fff; 
+  --color-primary-invert: #fff;
+} */
+
+
+/*  #DDE6ED  #9DB2BF  #526D82  #27374D */
+/* body {
+  --color-background: #27374D;
+  --color-foreground: #DDE6ED;
+  --color-accent: #526D82;
+  --color-one: #DDE6ED;
+  --color-two: #344E41;
+  --color-primary: #000; 
+  --color-primary-invert: #DDE6ED;
+}
+
+body.dark {
+  --color-background: #1d2939;
+  --color-foreground: #27374D;
+  --color-accent: #526D82;
+  --color-one: #DDE6ED;
+  --color-two: #DAD7CD;
+  --color-primary: #DDE6ED; 
+  --color-primary-invert: #000;
+}
+h1 {
+  color: var(--color-one);
+} */
+
+
+
+/*  #FBE9D0  #90AEAD  #874F41  #E64833  #244855 */
+/* body {
+  --color-background: #874F41;
+  --color-foreground: #D9B08C;
+  --color-accent: #4C5958;
+  --color-one: #4C5958;
+  --color-two: #BFBFBF;
+  --color-primary: #D1E8E2; 
+  --color-primary-invert: #D1E8E2;
+} 
+body.dark {
+  --color-background: #3A6AA8;
+  --color-foreground: #10403B;
+  --color-accent: #10403B;
+  --color-one: #A3B18A;
+  --color-two: #DAD7CD;
+  --color-primary: #fff; 
+  --color-primary-invert: #fff;
+} */
+
+
+
+
+body, html {
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  height: 100vh;
+}
+
+
+/* h1 {
+  color: var(--color-one);
+} */
+
+
+
