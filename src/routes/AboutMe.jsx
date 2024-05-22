@@ -1,9 +1,14 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import '../static/css/content.css';
 
 const AboutMe = () => {
   return (
     <div class="block m-6 more-margin" >
+      <Helmet>
+        <title>About Me</title>
+        <meta name="description" content="This page talks about me." />
+      </Helmet>
       <div class="block mb-6">
         <h1 class="is-size-1">
           About Me

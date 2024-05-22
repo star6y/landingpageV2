@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import '../static/css/projects.css';
 import novelNotes from '../static/images/novelNotes.png';
 import sim from '../static/images/sim.png';
@@ -9,6 +10,10 @@ import votingSystem from '../static/images/votingSystem.png';
 const Projects = () => {
   return (
     <div class="block m-6 more-margin">
+      <Helmet>
+        <title>Projects</title>
+        <meta name="description" content="Some of the projets I have worked on" />
+      </Helmet>
       <div class="block m-6">
         <h1 class="is-size-1">
           Projects
@@ -88,7 +93,7 @@ const Projects = () => {
 
         <div class="box has-text-left is-size-5  mb-6 project">
           <div className="project-link">
-            <a href="https://white-forest-086ea6910.5.azurestaticapps.net/todos" target="_blank" rel="noopener noreferrer">
+            <a href="https://white-forest-086ea6910.5.azurestaticapps.net/" target="_blank" rel="noopener noreferrer">
               <img src={todo} alt="" class="project-image " />
             </a>
           </div>
