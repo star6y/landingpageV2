@@ -30,7 +30,7 @@ body.dark {
 
 
 /*  DAD7CD  A3B18A  588157  3A5A40  344E41 */
-body {
+/* body {
   --color-background: #DAD7CD;
   --color-foreground: #A3B18A;
   --color-accent: #588157;
@@ -48,7 +48,29 @@ body.dark {
   --color-two: #DAD7CD;
   --color-primary: #fff; 
   --color-primary-invert: #DAD7CD;
+} */
+
+
+
+body.light-mode {
+  --color-background: #ffffff;
+  --color-foreground: #f2f1f1;
+  --color-accent: #e57676;
+  --color-one: #e57676;
+  --color-border: #17171720;
+  --color-primary: #000; 
+  --color-primary-invert: #fff;
+} 
+body.dark-mode {
+  --color-background: #070707;
+  --color-foreground: #000000;
+  --color-accent: #000000;
+  --color-one: #27374D;
+  --color-border: #C8898920;
+  --color-primary: #e57676; 
+  --color-primary-invert: #fff;
 }
+/*  c87474     5d547c */
 
 
 /*  #127369  #10403B  #8AA6A3  #4C5958  #BFBFBF */
@@ -125,12 +147,10 @@ body, html {
   background-color: var(--color-background);
   color: var(--color-primary);
   height: 100vh;
+  width: 100vw;
 }
 
 
-/* h1 {
-  color: var(--color-one);
-} */
 
 
 

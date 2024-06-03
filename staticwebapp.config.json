@@ -4,10 +4,13 @@
             "route": "/"
         },
         {
-            "route": "/aboutme"        
+            "route": "/aboutme"
         },
         {
-            "route": "/projects"        
+            "route": "/projects"
+        },
+        {
+            "route": "/sandbox"
         }
     ],
     "navigationFallback": {

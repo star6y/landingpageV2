@@ -20,7 +20,7 @@
 
 .item:hover {
   /* background-color: red; */
-  background-color: var(--color-foreground);  
+  background-color: var(--color-one);  
   color: var(--color-primary);
   text-decoration: none;
 }

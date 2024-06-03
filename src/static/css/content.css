@@ -1,8 +1,23 @@
 .box {
   background-color: var(--color-foreground);
   color: var(--color-primary);
-  margin-bottom: 20px;
+
+  /* border: 1px solid var(--color-border); */
+  border-radius: 20px;
+  /*            color               right  bottom   fading/mixing    area size  */
+  box-shadow: var(--color-border) 0px 5px 10px 5px;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+
+  /* box-shadow: rgba(255, 255, 255, 0.3) 0px 50px 100px -20px, rgba(255, 0, 0, 0.3) 0px 30px 60px -30px, rgba(155, 88, 88, 0.3) 0px -2px 6px 0px inset; */
+  
+  /* box-shadow: rgba(255, 255, 255, 0.221) 0px 4px 16px, rgba(255, 255, 255, 0.495) 0px 8px 24px, rgba(226, 226, 230, 0.1) 0px 16px 56px; */
+  
+  
+  margin-bottom: 100px;
+  /* display: flex; */
 }
+
+
 
 .more-margin {
   margin-bottom: 200px;
@@ -14,9 +29,9 @@ ul {
   list-style-type: disc; 
 }
 
-ul li {
-  /* margin-bottom: 10px;*/
-}
+/* ul li {
+  margin-bottom: 10px;
+} */
 
 a {
   color: var(--color-primary);
@@ -28,13 +43,99 @@ a:hover {
   text-decoration: underline;
 }
 
+/*   HOME   */
+.canvas-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  /* max-height: 100%; */
+  min-height: 500px;
+}
+
+.helpBox {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.small-box {
+  width: 40%;
+  margin: 0 auto;
+  animation: colorChange 4s forwards;
+}
+
+.fade-in-out.show {
+  animation: fadeIn 1s forwards;
+  /* opacity: 1; */
+}
+
+.fade-in-out.hide {
+  animation: fadeOut 1s forwards;
+  /* opacity: 0; */
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes colorChange {
+  0% { background-color: var(--color-foreground);  }
+  100% { background-color: var(--color-one); }
+}
 
 
 
+/*   SANDBOX   */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.control-item {
+  min-width: 180px;
+  max-width: 15%;
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.ht {
+  height: 45px;
+}
+/* label {
+  margin-bottom: 20px;
+} */
+
+input {
+  margin: 0 auto;
+}
 
 @media (max-width: 750px) {
   .more-margin {
     margin-bottom: 200px; 
     padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 450px) {
+  .canvas-container {
+    position:fixed;
+    overflow: visible;
+  }
+  canvas {
+    min-height: 300px;
   }
 }
