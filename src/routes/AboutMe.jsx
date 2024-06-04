@@ -34,7 +34,7 @@ const AboutMe = () => {
 
           Feel free to look through my projects or to connect with me.
           <ul>
-            <li>Connect with me on <a href="https://www.linkedin.com/in/andrei-anicescu-309190152/">LinkedIn</a></li>
+            <li>Connect with me on <a href="https://www.linkedin.com/in/andrei-anicescu/">LinkedIn</a></li>
             <li>Check out my <a href="https://github.com/star6y">GitHub</a></li>
           </ul>
         </div>
