@@ -69,6 +69,13 @@ canvas {
   animation: colorChange 4s forwards;
 }
 
+.normal-box {
+  width: 80%;
+  margin: 0 auto;
+  animation: colorChange 4s forwards;
+  text-align: center;
+}
+
 .fade-in-out.show {
   animation: fadeIn 1s forwards;
   /* opacity: 1; */

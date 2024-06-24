@@ -61,6 +61,11 @@ const Sandbox = () => {
       setHelpText(text);
   };
 
+  const [showSpanElem, setShowSpanElem] = useState(true);
+  const hideSpan = () => {
+    setShowSpanElem(false);
+  }
+
 
   return (
     <div className="block m-6 more-margin">
@@ -75,6 +80,11 @@ const Sandbox = () => {
       </div>
       <div className="container">
         <div className="box has-text-left is-size-5 mb-6">
+        {showSpanElem && (
+            <div className=" fade-in-out show position-absolute" onMouseOver={hideSpan}>
+              <span className='box normal-box is-size-4'>Hover your mouse over the text below</span>
+            </div>
+          )}
           <ParticleAnimation source="Sandbox" text={text} userTextSize={textSize} color={color} /*color2={color2}*/ 
             constellation={false} fixedY={false} textDistY={distY} mouseRad={mouseRadius} particleSpread={particleSpread}
             particleSize={particleSize} />
